@@ -3,7 +3,7 @@ import json
 
 url = "https://pixabay.com/api/"
 key = "27211759-a2723440d6ac6b96bc4fdfe90"
-search = input('what kind of images would you like to see: ') # search word-ების შეყვანის საშუალებას გვაძლევს მაგ.: sky+flowers
+search = input('what kind of images would you like to see: ') # lets us use search words for example: sky+flowers
 amount = 3
 payload = {'key': key, 'q': search, 'per_page': amount}
 response = requests.get(url, params=payload)
